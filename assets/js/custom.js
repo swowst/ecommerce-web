@@ -40,3 +40,13 @@ $(document).ready(function() {
       });
     });
     
+
+
+
+    $(document).ready(function() {
+      $('.image_list li img').click(function() {
+        const imageUrl = $(this).attr('src');
+        $('.image_selected img').attr('src', imageUrl);
+      });
+    });
+    
