@@ -45,8 +45,11 @@ $(document).ready(function() {
 
     $(document).ready(function() {
       $('.image_list li img').click(function() {
-        const imageUrl = $(this).attr('src');
-        $('.image_selected img').attr('src', imageUrl);
+          const imageUrl = $(this).attr('src');
+          const $singleProduct = $(this).closest('.single_product');
+          $singleProduct.find('.image_selected img').attr('src', imageUrl);
       });
-    });
-    
+  });
+  
+
+

@@ -280,4 +280,14 @@
         width: 246px!important;
         left: -11rem!important;
     }
+
+    
+}
+
+
+
+@media (max-width: 390px){
+    .order-detail {
+        margin-top: 64px!important;
+    }
 }

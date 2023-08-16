@@ -328,6 +328,9 @@ Custom Css
 
 
 
+
+
+
 .image_list li {
     display: -webkit-box;
     display: -moz-box;
@@ -700,6 +703,17 @@ Custom Css
         width: 100%;
         height: 100%;
         object-fit: cover;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 510px){
+    .image_list li{
+      margin-right: 5px;
+    }
+    
+    .image_selected{
+        height: 150px;
     }
 }
 
@@ -710,22 +724,18 @@ Custom Css
         width: 290px;
        
     }
+
+    .image_list li {
+       padding: 5px;
+    }
     
 }
 
-@media (max-width: 390px){
-    .image_selected{
-        height: 300px;
-    }
-}
 
 
 
-@media (max-width: 300px){
-    .image_selected{
-        height: 25px;
-    }
-}
+
+
 
 .btn-close-item{
     color: red!important;
