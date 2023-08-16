@@ -703,11 +703,23 @@ Custom Css
     }
 }
 
+@media (max-width: 407px){
+    .basket{
+        top: 43px;
+        left: 0;
+        width: 290px;
+       
+    }
+    
+}
+
 @media (max-width: 390px){
     .image_selected{
         height: 300px;
     }
 }
+
+
 
 @media (max-width: 300px){
     .image_selected{
