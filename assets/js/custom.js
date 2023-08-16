@@ -53,3 +53,34 @@ $(document).ready(function() {
   
 
 
+
+  $(document).ready(function() {
+    // Sepet kontrolü ve boş mesajını ekleme
+    const $basket = $('.basket');
+    const $emptyBasketMessage = $('<p class="empty_basket_message">Səbət boşdur.</p>');
+  
+    function checkBasketEmpty() {
+      if ($basket.find('.card-item').length === 0) {
+        $basket.append($emptyBasketMessage);
+      } else {
+        $emptyBasketMessage.remove();
+      }
+    }
+  
+    checkBasketEmpty(); // İlk yüklemede sepet durumunu kontrol et
+  
+    // Ürünü sepetten çıkarma ve sepet durumunu kontrol etme
+    $('.btn-close-item').click(function() {
+      $(this).closest('.card-item').remove();
+      checkBasketEmpty();
+    });
+  
+    // Sepet durumunu kontrol et
+    $('.checkout-button').click(function() {
+      checkBasketEmpty();
+      // İleriye dönük olarak burada ödeme ve sipariş işlemleri gerçekleştirilebilir
+    });
+  });
+  
+  
+
