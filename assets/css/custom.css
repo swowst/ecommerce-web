@@ -7,7 +7,7 @@ Custom Css
 }
 
 .basket{
-    width: 350px;
+    width: 420px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgb(231, 231, 231);   
@@ -41,7 +41,7 @@ Custom Css
 
 .cart-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between!important;
     background-color: rgb(255, 255, 255);
     align-items: center;
     padding: 15px 30px;
@@ -61,7 +61,8 @@ Custom Css
 .cart-up h4{
     font-weight: normal;
     color: #56ae6c;
-    font-size: 23px;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .card-close-btn .btn-close{
