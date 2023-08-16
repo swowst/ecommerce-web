@@ -138,10 +138,11 @@
                     <div class="nav-icon  d-lg-inline" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <span class="btn btn-success">Onlayn konsultant</span>
                     </div>
-                    <div class="nav-icon position-relative text-decoration-none basket-container btn">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    <div class="nav-icon position-relative text-decoration-none basket-container ">
+                        <div class="toggle-div btn">
+                            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1 basket-icon-menu"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        </div>
 
                         <div class="basket d-none">
                             <div class="card-item">
@@ -150,37 +151,81 @@
                                         <img src="./assets/img/brand_02.png" alt="">
                                     </div>
 
+                                   
+
                                     <div class="cart-container-right">
                                         <div class="cart-up">
                                             <h4>Product title</h4>
+                                            <div class="card-close-btn">
+                                                <i class="fa-solid fa-x btn-close-item"></i>
+                                            </div>
                                         </div>
+
+                                       
 
                                         <div class="cart-down">
                                             <p>Product price</p>
                                         </div>
+
+                                        <div class="">
+                                            <label for="quantity" class="label-qty">Quantity</label>
+                                            <div class="quantity">
+                                              <button class="btn btn-dark decrease" id="decrease">-</button>
+                                              <input class="number-qty" type="number" id="count" value="1" min="1" max="999">
+                                              <span class="btn btn-dark increase" id="increase">+</span>
+                                            </div>
+                                          </div>
+
+                                          
                                     </div>
+
+                                    
                                 </div>
 
                             </div>
+
                             <div class="card-item">
                                 <div class="cart-container">
                                     <div class="cart-container-left">
-                                        <img src="./assets/img/brand_02.png" alt="">
+                                        <img src="./assets/img/brand_01.png" alt="">
                                     </div>
+
+                                   
 
                                     <div class="cart-container-right">
                                         <div class="cart-up">
                                             <h4>Product title</h4>
+                                            <div class="card-close-btn">
+                                                <i class="fa-solid fa-x btn-close-item"></i>
+                                            </div>
                                         </div>
+
+                                       
 
                                         <div class="cart-down">
                                             <p>Product price</p>
                                         </div>
+
+                                        <div class="">
+                                            <label for="quantity" class="label-qty">Quantity</label>
+                                            <div class="quantity">
+                                              <button class="btn btn-dark decrease" id="decrease">-</button>
+                                              <input class="number-qty" type="number" id="count" value="1" min="1" max="999">
+                                              <span class="btn btn-dark increase" id="increase">+</span>
+                                            </div>
+                                          </div>
+
+                                          
                                     </div>
+
+                                    
                                 </div>
 
                             </div>
 
+                            
+                            
+                            
 
                             <div class="card-button">
                                 <a class="checkout-button btn btn-success" href="#">Checkout</a>

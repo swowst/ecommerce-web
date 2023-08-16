@@ -7,7 +7,7 @@ Custom Css
 }
 
 .basket{
-    width: 300px;
+    width: 350px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgb(231, 231, 231);   
@@ -19,9 +19,16 @@ Custom Css
     padding-bottom: 2px;
     z-index: 9999;
     transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
 }
 
+
+.basket-container{
+    border-radius: 3px!important;
+}
+
+.label-qty{
+    text-align: center!important;
+}
 
 .d-none{
     display: none;
@@ -54,7 +61,11 @@ Custom Css
 .cart-up h4{
     font-weight: normal;
     color: #56ae6c;
-    font-size: 20px;
+    font-size: 23px;
+}
+
+.card-close-btn .btn-close{
+    color: rgb(0, 0, 0)!important;
 }
 
 .cart-down p{
@@ -91,8 +102,23 @@ Custom Css
    transition: all 0.3s!important;
 }
 
-.basket-container i{
+.basket-container .basket-icon-menu{
     color: #fff!important;
+}
+
+
+.card-close-btn i{
+    background-color: #181717!important;
+    padding: 7px;
+    font-size: 13px;
+    display: inline-block;
+   
+}
+
+
+.cart-up{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -686,3 +712,9 @@ Custom Css
         height: 25px;
     }
 }
+
+.btn-close-item{
+    color: red!important;
+}
+
+
