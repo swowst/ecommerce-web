@@ -163,7 +163,7 @@ Custom Css
 }
 .product_name h2{
     font-weight: 600;
-    font-size: 1.5rem!important;
+    font-size: 1.5rem;
 }
 
 .badge {
@@ -721,5 +721,7 @@ Custom Css
 
 
 
-
+.desc-respo{
+    display: none;
+}
 
