@@ -1,16 +1,12 @@
+@media (max-width:407px) {
+    #templatemo_main_nav .navbar .nav-icon{
+        margin-top: 10px;
+    }
+}
 @media (max-width:569px) {
     #templatemo_main_nav .navbar .nav-icon{
         margin-right: 10px!important;
     }
 }
 
-@media (max-width:407px) {
-    #templatemo_main_nav .navbar .nav-icon{
-        margin-top: 10px;
-    }
-}
-/* @media (max-width:767px) {
-    .sl-text{
-        padding: 3rem 0!important;
-    }
-} */
+
