@@ -18,18 +18,18 @@ Custom Css
     transition: all 0.4s ease-in-out!important;
     padding-bottom: 2px;
     z-index: 9999;
-    display: none;
     transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
 }
 
 
-
-.basket-container:hover .basket{
-   display: inline-block;
+.d-none{
+    display: none;
 }
 
-
-
+.d-block{
+    display: block;
+}
 
 
 .cart-container{
