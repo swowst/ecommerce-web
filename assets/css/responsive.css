@@ -237,6 +237,7 @@
     .basket{
         right: 0!important;
         width: 300px!important;
+        left: -14.5rem!important;
     }
     .cart-up{
         align-items: center!important;
@@ -267,8 +268,16 @@
     .basket{
         right: -22px!important;
         width: 258px!important;
+        left: -12.5rem!important;
     }
     .cart-container{
         padding: 15px 13px!important;
+    }
+}
+@media (max-width:280px) {
+    .basket{
+        right: -22px!important;
+        width: 246px!important;
+        left: -11rem!important;
     }
 }
