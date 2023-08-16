@@ -7,7 +7,7 @@ Custom Css
 }
 
 .basket{
-    width: 300px;
+    width: 350px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgb(231, 231, 231);   
@@ -18,18 +18,25 @@ Custom Css
     transition: all 0.4s ease-in-out!important;
     padding-bottom: 2px;
     z-index: 9999;
-    display: none;
     transition: opacity 0.3s ease-in-out;
 }
 
 
-
-.basket-container:hover .basket{
-   display: inline-block;
+.basket-container{
+    border-radius: 3px!important;
 }
 
+.label-qty{
+    text-align: center!important;
+}
 
+.d-none{
+    display: none;
+}
 
+.d-block{
+    display: block;
+}
 
 
 .cart-container{
@@ -54,7 +61,11 @@ Custom Css
 .cart-up h4{
     font-weight: normal;
     color: #56ae6c;
-    font-size: 20px;
+    font-size: 23px;
+}
+
+.card-close-btn .btn-close{
+    color: rgb(0, 0, 0)!important;
 }
 
 .cart-down p{
@@ -91,11 +102,28 @@ Custom Css
    transition: all 0.3s!important;
 }
 
-.basket-container i{
+.basket-container .basket-icon-menu{
     color: #fff!important;
 }
 
 
+.card-close-btn i{
+    background-color: #181717!important;
+    padding: 7px;
+    font-size: 13px;
+    display: inline-block;
+   cursor: pointer;
+}
+
+
+.cart-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-slide{
+    background-color: #EFEFEF!important;
+}
 
 
 
@@ -686,5 +714,12 @@ Custom Css
         height: 25px;
     }
 }
+
+.btn-close-item{
+    color: red!important;
+}
+
+
+
 
 
