@@ -13,23 +13,24 @@ document.querySelector(".toggle-div").addEventListener("click", function(){
 
 
 
-const decreaseButton = document.getElementById('decrease');
-    const increaseButton = document.getElementById('increase');
-    const countInput = document.getElementById('count');
+$(document).ready(function() {
+  $('.decrease').click(function() {
+    const inputField = $(this).siblings('.number-qty');
+    const currentValue = parseInt(inputField.val(), 10);
+    if (currentValue > 1) {
+      inputField.val(currentValue - 1);
+    }
+  });
 
-    decreaseButton.addEventListener('click', () => {
-      const currentValue = parseInt(countInput.value, 10);
-      if (currentValue > 0) {
-        countInput.value = currentValue - 1;
-      }
-    });
+  $('.increase').click(function() {
+    const inputField = $(this).siblings('.number-qty');
+    const currentValue = parseInt(inputField.val(), 10);
+    if (currentValue < 999) {
+      inputField.val(currentValue + 1);
+    }
+  });
+});
 
-    increaseButton.addEventListener('click', () => {
-      const currentValue = parseInt(countInput.value, 10);
-      if (currentValue < 999) {
-        countInput.value = currentValue + 1;
-      }
-    });
 
 
 
