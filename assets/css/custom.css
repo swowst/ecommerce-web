@@ -1,27 +1,35 @@
 /*
 Custom Css
 */
-
+.basket-container {
+    position: relative;
+    display: inline-block;
+}
 
 .basket{
     width: 300px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: rgb(243, 243, 243);   
+    background-color: rgb(231, 231, 231);   
     position: absolute;
     top: 43px;
     right: 0;
-    display: none;
     border: 1px solid rgb(211, 210, 210);
-    
+    transition: all 0.4s ease-in-out!important;
     padding-bottom: 2px;
     z-index: 9999;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
+
+
 .basket-container:hover .basket{
-    display: inline-block;
-    transition: 0.4s!important;
+   display: inline-block;
 }
+
+
+
 
 
 .cart-container{
@@ -284,11 +292,13 @@ Custom Css
     -ms-transform: translateX(-15px);
     -o-transform: translateX(-15px);
     transform: translateX(-15px);
-    border: solid 1px #e8e8e8;
+    /* border: solid 1px #e8e8e8; */
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 15px
 }
+
+
 
 .image_list li {
     display: -webkit-box;
@@ -434,11 +444,11 @@ Custom Css
 
 
 
-
+/* 
 .single_product {
     padding-top: 16px;
     padding-bottom: 140px
-}
+} */
 
 .image_list li {
     display: -webkit-box;
@@ -472,7 +482,8 @@ Custom Css
 }
 
 .image_list li img {
-    max-width: 100%
+    max-width: 100%;
+    object-fit: contain!important;
 }
 
 .image_selected {
@@ -491,8 +502,8 @@ Custom Css
     -ms-transform: translateX(-15px);
     -o-transform: translateX(-15px);
     transform: translateX(-15px);
-    border: solid 1px #e8e8e8;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    /* border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     padding: 15px
 }
@@ -639,4 +650,39 @@ Custom Css
 
 .product-desc{
     margin-top: 5px;
+}
+
+.featured-products{
+    background-color: #e5e5e5;
+}
+
+
+@media (max-width: 991px){
+    .image_list{
+        padding-left: 0;
+    }
+
+    .image_list li {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image_list li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 390px){
+    .image_selected{
+        height: 300px;
+    }
+}
+
+@media (max-width: 300px){
+    .image_selected{
+        height: 25px;
+    }
 }
