@@ -1,14 +1,26 @@
-var basket = document.querySelector(".basket")
+var basket = document.querySelector(".basket");
+var toggleButton = document.querySelector(".toggle-div");
 
-document.querySelector(".toggle-div").addEventListener("click", function(){
-    if(basket.classList.contains("d-none")){
-        basket.classList.remove("d-none")
-        basket.classList.add("d-block")
-    }else{
-        basket.classList.remove("d-block")
-        basket.classList.add("d-none")
+document.addEventListener("click", function (event) {
+    var isBasketVisible = basket.classList.contains("d-block");
+    var isClickInsideBasket = basket.contains(event.target) || toggleButton.contains(event.target);
+    
+    if (isBasketVisible && !isClickInsideBasket && !event.target.closest(".btn-close-item")) {
+        basket.classList.remove("d-block");
+        basket.classList.add("d-none");
     }
-})
+});
+
+toggleButton.addEventListener("click", function () {
+    if (basket.classList.contains("d-none")) {
+        basket.classList.remove("d-none");
+        basket.classList.add("d-block");
+    } else {
+        basket.classList.remove("d-block");
+        basket.classList.add("d-none");
+    }
+});
+
 
 
 
