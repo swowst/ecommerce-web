@@ -74,7 +74,6 @@ $(document).ready(function() {
           const $singleProduct = $(this).closest('.single_product');
           $singleProduct.find('.image_selected img').attr('src', imageUrl);
       });
-<<<<<<< HEAD
     });
     
 
@@ -88,50 +87,3 @@ $(document).ready(function() {
     } );
     
     splide.mount();
-=======
-  });
-  
-
-
-
-  $(document).ready(function() {
-    var cartContainer = $(".basket");
-    var cartItems = cartContainer.find(".card-item");
-
-    if (cartItems.length === 0) {
-        cartItems.append("<p class='empty-cart-message'>Sepetiniz boştur</p>");
-    }
-
-   
-});
-
-
-
-$(document).ready(function() {
-  // Sepet kontrolü ve boş mesajını ekleme
-  const $basket = $('.basket');
-  const $emptyBasketMessage = $('<p class="empty_basket_message">Səbətiniz boşdur!</p>');
-
-  function checkBasketEmpty() {
-    if ($basket.find('.card-item').length === 0) {
-      $basket.append($emptyBasketMessage);
-    } else {
-      $emptyBasketMessage.remove();
-    }
-  }
-
-  checkBasketEmpty(); // İlk yüklemede sepet durumunu kontrol et
-
-  // Ürünü sepetten çıkarma ve sepet durumunu kontrol etme
-  $('.btn-close-item').click(function() {
-    $(this).closest('.card-item').remove();
-    checkBasketEmpty();
-  });
-
-  // Sepet durumunu kontrol et
-  $('.checkout-button').click(function() {
-    checkBasketEmpty();
-    // İleriye dönük olarak burada ödeme ve sipariş işlemleri gerçekleştirilebilir
-  });
-});
->>>>>>> 867343278f2cef24917b10161960e59af3c68a6a
