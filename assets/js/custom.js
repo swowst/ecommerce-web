@@ -70,12 +70,16 @@ $(document).ready(function() {
 
 
 
-    $(document).ready(function() {
-      $('.image_list li img').click(function() {
-          const imageUrl = $(this).attr('src');
-          const $singleProduct = $(this).closest('.single_product');
-          $singleProduct.find('.image_selected img').attr('src', imageUrl);
-      });
+    $(document).ready(function () {
+      // Bu işlev, tıklanan resmi değiştirir
+      function changeProductImage(event) {
+          var newImageUrl = $(this).attr("src");
+          var productDetailImage = $(this).closest(".row.mb-4").find(".card-img");
+          productDetailImage.attr("src", newImageUrl);
+      }
+
+      // Her ürün divi için tıklama olayını dinleyin ve değiştirme işlevini çağırın
+      $(".row.mb-4 .image_list li img").on("click", changeProductImage);
   });
   
 

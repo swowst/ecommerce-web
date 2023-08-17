@@ -7,7 +7,7 @@ Custom Css
 }
 
 .basket{
-    width: 420px;
+    width: 400px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgb(231, 231, 231);   
@@ -349,7 +349,21 @@ Custom Css
 
 
 
-  .empty_basket_message , .empty-cart-message{
+  .empty_basket_message{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    margin-left: 20px!important;
+
+  }
+
+
+  .empty-cart-message{
     background-color: white;
     padding: 10px;
     text-align: center;
@@ -361,11 +375,14 @@ Custom Css
   }
 
 
-
 .menu-respo{
     display: none;
 }
 
+
+.menu-item{
+    margin-right: 10px;
+}
 
 
 .image_list li {
@@ -785,7 +802,7 @@ Custom Css
 }
 
 .image_list{
-    overflow: auto;
+    /* overflow: auto; */
     height: 40rem;
 }
 
@@ -814,3 +831,68 @@ Custom Css
 .splide{
     display: none;
 }
+
+
+
+.order-det{
+    padding-top: 90px;
+}
+
+
+.card-img-cnt img{
+    object-fit: contain;
+}
+
+
+
+
+/* normaly product style */
+
+.card{
+    border: none!important;
+    margin-bottom: 5rem!important;
+}
+
+.card-body h1{
+    font-weight: 600;
+}
+
+.card-body h2{
+    font-weight: 600;
+}
+.card-body p{
+    color: #666;
+}
+#carusel{
+    display: none;
+}
+
+.order-left-img{
+    order: 1!important;
+    overflow: auto!important;
+    height: 33rem!important;
+}
+.order-main-img{
+    padding-top: 10rem;
+}
+
+.product-cont{
+    padding-top: 4rem;
+}
+
+#order-w{
+    width: 40%;
+}
+
+.order-left-img::-webkit-scrollbar {
+    width: 3px;
+  }
+  .order-left-img::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .order-left-img::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .order-left-img::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
