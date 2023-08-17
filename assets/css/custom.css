@@ -113,6 +113,11 @@ Custom Css
     margin-top: 5px;
 }
 
+.card-item-respo{
+    border: 1px solid rgb(211, 210, 210);
+    margin-top: 5px;
+}
+
 .basket-container{
    background-color: #56ae6c!important;
    transition: all 0.3s!important;
@@ -344,7 +349,7 @@ Custom Css
 
 
 
-  .empty_basket_message {
+  .empty_basket_message , .empty-cart-message{
     background-color: white;
     padding: 10px;
     text-align: center;
