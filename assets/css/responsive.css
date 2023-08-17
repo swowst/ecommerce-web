@@ -23,7 +23,7 @@
     .order-main{
         order: 2!important;
         flex: 0 0 auto!important;
-        width: 33.3333333333%!important;
+        width: 50%!important;
     }
     .order-detail{
         flex: 0 0 auto!important;
@@ -60,20 +60,6 @@
         margin-top: -6rem!important;
         height: 26rem!important;
     }
-
-    .responsive-main-menu{
-        display: none;
-    }
-
-    .menu-respo{
-        display: block!important;
-        display: flex!important;
-        margin: 0 auto!important;
-    }
-
-    .menu-item{
-        margin-right: 10px!important;
-    }
 }
 
 @media (max-width:767px) {
@@ -105,6 +91,18 @@
     .shp-button{
         width: 8rem;
     }
+
+    .splide{
+        display: block!important; 
+        width: 29rem; 
+        padding-left: 4rem; 
+        margin-bottom: 20px;
+    }
+    .splide__slide img{
+        width: 80px!important; 
+        height: 80px!important;
+    }
+
 }
 
 @media (max-width:537px) {
@@ -131,20 +129,6 @@
     }
     .category_name h4{
         font-size: 1rem!important;
-    }
-
-    .menu-respo{
-        flex-direction: column!important;
-    }
-
-    .menu-item{
-        text-align: center;
-        margin-bottom: 10px!important;
-    }
-
-    .basket-respo{
-        width: 300px!important;
-        left: -80px;
     }
 }
 
@@ -219,9 +203,6 @@
     }
 }
 
-
-
-
 @media (max-width:390px) {
     .orders{
         margin-top: -27px!important;
@@ -236,6 +217,17 @@
     }
     .order-detail{
         margin-top: 34px!important;
+    }
+    .splide{
+        display: block!important;
+        width: 55%!important;
+        padding-left: 0!important;
+        margin-bottom: 20px!important;
+        margin-top: -119px!important;
+    }
+    .splide__slide img{
+        width: 3rem!important;
+        height: 3rem!important;
     }
 }
 
@@ -297,6 +289,21 @@
         height: 25px;
         padding: 2px 0px;
     }
+
+
+    .splide{
+        display: block!important;
+        width: 55%!important;
+        padding-left: 0!important;
+        margin-bottom: 50px!important;
+        margin-top: -119px!important;
+    }
+
+    .splide__slide img{
+        width: 2rem!important;
+        height: 2rem!important;
+    }
+
 }
 
 @media (max-width:325px) {
@@ -307,6 +314,12 @@
     }
     .cart-container{
         padding: 15px 13px!important;
+    }
+}
+
+@media (max-width:300px) {
+    .image_selected{
+        height: 112px!important;
     }
 }
 @media (max-width:280px) {
