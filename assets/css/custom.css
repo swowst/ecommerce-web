@@ -21,6 +21,21 @@ Custom Css
     transition: opacity 0.3s ease-in-out;
 }
 
+.basket-respo{
+    width: 420px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(231, 231, 231);   
+    position: absolute;
+    top: 43px;
+    right: 0;
+    border: 1px solid rgb(211, 210, 210);
+    transition: all 0.4s ease-in-out!important;
+    padding-bottom: 2px;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+
 
 .basket-container{
     border-radius: 3px!important;
@@ -341,6 +356,10 @@ Custom Css
   }
 
 
+
+.menu-respo{
+    display: none;
+}
 
 
 
