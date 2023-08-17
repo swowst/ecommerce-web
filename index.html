@@ -9,17 +9,19 @@
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="../../css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
 </head>
 
@@ -414,7 +416,7 @@
     <!-- Close Header -->
 
 
-
+    <!-- Featured Product -->
 
     <section class=" featured-products">
         <div class="container py-5">
@@ -427,7 +429,6 @@
                 </div>
             </div>
             <div class="row">
-                <!-- bura rowlarivi at -->
 
 
                 <div class="row mb-4">
@@ -436,125 +437,76 @@
                         <div class="container pb-1">
                             <div class="row">
                                 <div class="col-lg-2 order-lg-1 order-left-img">
-                                    <ul class="image_list">
-                                        <li><img src="./assets/img/brand_02.png" alt=""></li>
-                                        <li><img src="./assets/img/brand_03.png" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 order-lg-2 order-1 order-main-img">
-                                    <div class="card mb-2 card-img-cnt" id="card-img-cnt">
-                                        <img class="card-img img-fluid" src="./assets/img/nikejpg.jpg"
-                                            alt="Card image cap" id="product-detail">
-                                    </div>
-                                    <div class="row" id="carusel">
-                                        <!--Start Controls-->
-                                        <div class="col-1 align-self-center">
-                                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
-                                                <i class="text-dark fas fa-chevron-left"></i>
-                                            </a>
-                                        </div>
-                                        <!--End Controls-->
-                                        <!--Start Carousel Wrapper-->
-                                        <div id="multi-item-example"
-                                            class="col-10 carousel slide carousel-multi-item pointer-event carusel-w"
-                                            data-bs-ride="carousel">
-                                            <!--Start Slides-->
-                                            <div class="carousel-inner product-links-wap" role="listbox">
-
-                                                <div class="carousel-item active">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 1">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/brand_02.png"
-                                                                    alt="Product Image 2">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 3">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 4">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 5">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 6">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 7">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/blacknike.jpeg"
-                                                                    alt="Product Image 8">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 9">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <div class="items-slider-container2 js-items-slider-container2">
+                                        <div class="slider slider-for2">
+                                            <div class="slider slider-nav2 ">   
+                                                <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                                <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_02.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_03.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_04.png" alt=""></div>
 
                                             </div>
-                                            <!--End Slides-->
+                                            
                                         </div>
-                                        <!--End Carousel Wrapper-->
-                                        <!--Start Controls-->
-                                        <div class="col-1 align-self-center">
-                                            <a href="#multi-item-example" role="button" data-bs-slide="next">
-                                                <i class="text-dark fas fa-chevron-right"></i>
-                                            </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 order-lg-2 order-1 order-main-img">
+
+
+                                    <div class="items-slider-container js-items-slider-container">
+                                        <div class="slider slider-for">
+                                            <div>
+                                                <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                                <div class="item-informations-container left-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                                <div class="item-informations-container left-center">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_02.png" alt=""></div>
+                                                <div class="item-informations-container left-bottom">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_03.png" alt=""></div>
+                                                <div class="item-informations-container center-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_04.png" alt=""></div>
+                                                <div class="item-informations-container center-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+
+
+
                                         </div>
-                                        <!--End Controls-->
+                                        <div class="slider slider-nav mobile">
+                                            <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                            <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                            <div><img src="./assets/img/brand_02.png"  alt=""></div>
+                                            <div><img src="./assets/img/brand_03.png"  alt=""></div>
+                                            <div><img src="./assets/img/brand_04.png" alt=""></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- col end -->
@@ -602,131 +554,83 @@
 
 
                 </div>
+
                 <div class="row mb-4">
 
                     <section class="product-section" style="background-color: #fff;">
                         <div class="container pb-1">
                             <div class="row">
                                 <div class="col-lg-2 order-lg-1 order-left-img">
-                                    <ul class="image_list">
-                                        <li><img src="./assets/img/brand_02.png" alt=""></li>
-                                        <li><img src="./assets/img/brand_03.png" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-                                        <li><img src="./assets/img/blacknike.jpeg" alt=""></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 order-lg-2 order-1 order-main-img">
-                                    <div class="card mb-2 card-img-cnt" id="card-img-cnt">
-                                        <img class="card-img img-fluid" src="./assets/img/nikejpg.jpg"
-                                            alt="Card image cap" id="product-detail">
-                                    </div>
-                                    <div class="row" id="carusel">
-                                        <!--Start Controls-->
-                                        <div class="col-1 align-self-center">
-                                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
-                                                <i class="text-dark fas fa-chevron-left"></i>
-                                            </a>
-                                        </div>
-                                        <!--End Controls-->
-                                        <!--Start Carousel Wrapper-->
-                                        <div id="multi-item-example"
-                                            class="col-10 carousel slide carousel-multi-item pointer-event carusel-w"
-                                            data-bs-ride="carousel">
-                                            <!--Start Slides-->
-                                            <div class="carousel-inner product-links-wap" role="listbox">
-
-                                                <div class="carousel-item active">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 1">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/brand_02.png"
-                                                                    alt="Product Image 2">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 3">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 4">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 5">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 6">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 7">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/blacknike.jpeg"
-                                                                    alt="Product Image 8">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <a href="#">
-                                                                <img class="card-img img-fluid"
-                                                                    src="./assets/img/nikejpg.jpg"
-                                                                    alt="Product Image 9">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <div class="items-slider-container2 js-items-slider-container2">
+                                        <div class="slider slider-for2">
+                                            <div class="slider slider-nav2 ">   
+                                                <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                                <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_02.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_03.png" alt=""></div>
+                                                <div><img src="./assets/img/brand_04.png" alt=""></div>
 
                                             </div>
-                                            <!--End Slides-->
+                                            
                                         </div>
-                                        <!--End Carousel Wrapper-->
-                                        <!--Start Controls-->
-                                        <div class="col-1 align-self-center">
-                                            <a href="#multi-item-example" role="button" data-bs-slide="next">
-                                                <i class="text-dark fas fa-chevron-right"></i>
-                                            </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 order-lg-2 order-1 order-main-img">
+
+
+                                    <div class="items-slider-container js-items-slider-container">
+                                        <div class="slider slider-for">
+                                            <div>
+                                                <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                                <div class="item-informations-container left-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                                <div class="item-informations-container left-center">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_02.png" alt=""></div>
+                                                <div class="item-informations-container left-bottom">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_03.png" alt=""></div>
+                                                <div class="item-informations-container center-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div><img src="./assets/img/brand_04.png" alt=""></div>
+                                                <div class="item-informations-container center-top">
+                                                    <div class="item-slide-info-1"></div>
+                                                    <div class="item-slide-info-2"></div>
+                                                </div>
+                                            </div>
+
+
+
+
                                         </div>
-                                        <!--End Controls-->
+                                        <div class="slider slider-nav mobile">
+                                            <div><img src="./assets/img/blacknike.jpeg" alt=""></div>
+                                            <div><img src="./assets/img/brand_01.png" alt=""></div>
+                                            <div><img src="./assets/img/brand_02.png"  alt=""></div>
+                                            <div><img src="./assets/img/brand_03.png"  alt=""></div>
+                                            <div><img src="./assets/img/brand_04.png" alt=""></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- col end -->
@@ -774,6 +678,7 @@
 
 
                 </div>
+
 
 
             </div>
@@ -895,9 +800,9 @@
 
     <!-- Start Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>

@@ -1,4 +1,4 @@
-// Fonksiyonu tanımla
+
 function handleBasketToggle(basket, toggleButton) {
   document.addEventListener("click", function (event) {
       var isBasketVisible = basket.classList.contains("d-block");
@@ -21,15 +21,12 @@ function handleBasketToggle(basket, toggleButton) {
   });
 }
 
-// Responsiv menü elemanları
 var basketRespo = document.querySelector(".basket-respo");
 var toggleButtonRespo = document.querySelector(".toggle-div-respo");
 
-// Normal menü elemanları
 var basketNormal = document.querySelector(".basket");
 var toggleButtonNormal = document.querySelector(".toggle-div");
 
-// Fonksiyonları çağır
 handleBasketToggle(basketRespo, toggleButtonRespo);
 handleBasketToggle(basketNormal, toggleButtonNormal);
 
@@ -71,14 +68,12 @@ $(document).ready(function() {
 
 
     $(document).ready(function () {
-      // Bu işlev, tıklanan resmi değiştirir
       function changeProductImage(event) {
           var newImageUrl = $(this).attr("src");
           var productDetailImage = $(this).closest(".row.mb-4").find(".card-img");
           productDetailImage.attr("src", newImageUrl);
       }
 
-      // Her ürün divi için tıklama olayını dinleyin ve değiştirme işlevini çağırın
       $(".row.mb-4 .image_list li img").on("click", changeProductImage);
   });
   
@@ -88,7 +83,6 @@ $(document).ready(function() {
 
 
   $(document).ready(function() {
-    // Sepet kontrolü ve boş mesajını ekleme
     const $basket = $('.basket-respo');
     const $emptyBasketMessage = $('<p class="empty_basket_message">Səbətiniz boşdur!</p>');
   
@@ -100,18 +94,15 @@ $(document).ready(function() {
       }
     }
   
-    checkBasketEmpty(); // İlk yüklemede sepet durumunu kontrol et
+    checkBasketEmpty(); 
   
-    // Ürünü sepetten çıkarma ve sepet durumunu kontrol etme
     $('.btn-close-item').click(function() {
       $(this).closest('.card-item').remove();
       checkBasketEmpty();
     });
   
-    // Sepet durumunu kontrol et
     $('.checkout-button').click(function() {
       checkBasketEmpty();
-      // İleriye dönük olarak burada ödeme ve sipariş işlemleri gerçekleştirilebilir
     });
   });
   
@@ -119,6 +110,13 @@ $(document).ready(function() {
 
 
 
+  $(document).ready(function() {
+    $(".slider-nav2 img").on("click", function() {
+        var newImageSrc = $(this).attr("src");
+        
+        $(this).closest(".product-section").find(".order-main-img img").attr("src", newImageSrc);
+    });
+});
 
 
 
@@ -127,7 +125,6 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  // Sepet kontrolü ve boş mesajını ekleme
   const $basket = $('.basket');
   const $emptyBasketMessage = $('<p class="empty_basket_message">Səbətiniz boşdur!</p>');
 
@@ -139,17 +136,87 @@ $(document).ready(function() {
     }
   }
 
-  checkBasketEmpty(); // İlk yüklemede sepet durumunu kontrol et
+  checkBasketEmpty(); 
 
-  // Ürünü sepetten çıkarma ve sepet durumunu kontrol etme
   $('.btn-close-item').click(function() {
     $(this).closest('.card-item').remove();
     checkBasketEmpty();
   });
 
-  // Sepet durumunu kontrol et
   $('.checkout-button').click(function() {
     checkBasketEmpty();
-    // İleriye dönük olarak burada ödeme ve sipariş işlemleri gerçekleştirilebilir
+  });
+});
+
+
+
+
+ $(document).ready( function () {
+
+ $('.js-items-slider-container .slider-for').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '.js-items-slider-container .slider-nav'
+ });
+ $('.js-items-slider-container .slider-nav').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     asNavFor: '.js-items-slider-container .slider-for',
+     dots: true,
+     focusOnSelect: true,
+     arrows: false,
+     accessibility: true,
+     onAfterChange: function (slide, index) {
+       console.log("slider-nav change");
+       console.log(this.$slides.get(index));
+       $('.current-slide').removeClass('current-slide');
+       $(this.$slides.get(index)).addClass('current-slide');
+     },
+     onInit: function (slick) {
+       $(slick.$slides.get(0)).addClass('current-slide');
+     }
+ });
+});
+
+
+
+
+$(document).ready(function () {
+  $('.js-items-slider-container2 .slider-for2').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      draggable: true, 
+      asNavFor: '.js-items-slider-container2 .slider-nav2'
+  });
+  $('.js-items-slider-container2 .slider-nav2').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-items-slider-container2 .slider-for2',
+      dots: true,
+      focusOnSelect: true,
+      arrows: false,
+      accessibility: true,
+      draggable: true, 
+
+      vertical: true,
+      customPaging: function(slider, i) {
+          if (i < 4) {
+              return '<button type="button" data-role="none">' + (i + 1) + '</button>';
+          }
+          return '';
+      },
+      onAfterChange: function (slide, index) {
+          console.log("slider-nav change");
+          console.log(this.$slides.get(index));
+          $('.current-slide2').removeClass('current-slide2');
+          $(this.$slides.get(index)).addClass('current-slide2');
+      },
+      onInit: function (slick) {
+          $(slick.$slides.get(0)).addClass('current-slide2');
+      }
   });
 });
