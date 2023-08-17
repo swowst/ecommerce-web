@@ -737,3 +737,33 @@ Custom Css
     display: none;
 }
 
+.image_list{
+    overflow: auto;
+    height: 40rem;
+}
+
+.image_list::-webkit-scrollbar{
+    width: 5px;
+    
+}
+.image_list::-webkit-scrollbar-track{
+    background: #f1f1f1;
+
+}
+.image_list::-webkit-scrollbar-thumb{
+    background: #888;
+
+}
+.image_list::-webkit-scrollbar-thumb:hover{
+    background: #555;
+
+}
+
+.splide__slide img{
+    width: 150px;
+    height: 150px;
+}
+
+.splide{
+    display: none;
+}
