@@ -220,3 +220,115 @@ $(document).ready(function () {
       }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  // İlk ürünün sliderı
+  $('.product-1 .slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-1 .slider-nav'
+      // Diğer özel ayarları buraya ekleyin
+  });
+
+  $('.product-1 .slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-1 .slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+  });
+
+  // İkinci ürünün sliderı
+  $('.product-2 .slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-2 .slider-nav'
+      // Diğer özel ayarları buraya ekleyinx
+  });
+
+  $('.product-2 .slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-2 .slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+  });
+
+  // Diğer ürün bölümlerinin sliderları da burada benzer şekilde tanımlanabilir
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  // Ürün 1 Sliderları
+  $('.product-1 .slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-1 .slider-nav'
+      // Diğer özel ayarları buraya ekleyin
+  });
+
+  $('.product-1 .slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-1 .slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+  });
+
+  // Ürün 2 Sliderları
+  $('.product-2 .slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-2 .slider-nav'
+      // Diğer özel ayarları buraya ekleyin
+  });
+
+  $('.product-2 .slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-2 .slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+  });
+
+  // Diğer ürün bölümlerinin sliderları da benzer şekilde tanımlanabilir
+});
