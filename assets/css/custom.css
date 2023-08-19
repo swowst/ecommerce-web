@@ -1654,3 +1654,16 @@ height:79px;
 textarea:focus, input:focus{
   outline: none;
 }
+
+
+
+
+
+.slide-footer-nav-btn{
+  color: #59ab6e !important;
+    font-size: 2.8em !important;
+}
+
+.slide-footer-toggle{
+  background-color: #59ab6e !important;
+}
