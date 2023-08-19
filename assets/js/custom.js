@@ -135,7 +135,7 @@ function handleBasketToggle(basket, toggleButton) {
  
    function checkBasketEmpty() {
      const $basket = $('.basket');
-     const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-dark btn-outline btn-radius">Səbətiniz boşdur!</p>');
+     const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-success btn-outline btn-radius">Səbətiniz boşdur!</p>');
  
      if ($basket.find('.card-item').length === 0) {
        $basket.append($emptyBasketMessage);
@@ -157,7 +157,7 @@ function handleBasketToggle(basket, toggleButton) {
  
    function checkBasketEmptyFor() {
      const $basket = $('.basket-respo');
-     const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-dark">Səbətiniz boşdur!</p>');
+     const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-success">Səbətiniz boşdur!</p>');
    
      if ($basket.find('.cart-item-up').length === 0) {
        $basket.append($emptyBasketMessage);
