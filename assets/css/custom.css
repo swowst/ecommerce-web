@@ -55,8 +55,6 @@
 
 
 .cart-container{
-  display: flex;
-  justify-content: space-between!important;
   background-color: rgb(255, 255, 255);
   align-items: center;
   padding: 15px 30px;
@@ -75,18 +73,34 @@
 
 .cart-up h4{
   font-weight: normal;
-  color: #56ae6c;
-  font-size: 20px;
-  margin-right: 10px;
+  color: #212529;
 }
 
-.card-close-btn .btn-close{
+/* .card-close-btn .btn-close{
   color: rgb(0, 0, 0)!important;
+} */
+
+.product-price span{
+  display: inline-block;
+ font-weight: normal;
+ color: #212529;
+ text-align: start!important;
 }
 
-.cart-down p{
- font-size: 13px!important;
- font-weight: normal;
+
+.product-price{
+  text-align: start;
+}
+
+
+.product-title-text{
+  color: #212529;
+  text-align: start;
+}
+
+
+.label-qty-text{
+  color: #212529;
 }
 
 .card-button{
@@ -100,12 +114,10 @@
 .checkout-button {
   color: white!important;
   margin-bottom: 10px!important;
-
+  background-color: #212529!important;
+  outline: none!important;
 }
 
-.checkout-button:hover {
-  background-color: #2980b9;
-}
 
 
 .card-item{
@@ -119,7 +131,7 @@
 }
 
 .basket-container{
- background-color: #56ae6c!important;
+ background-color: #212529!important;
  transition: all 0.3s!important;
 }
 
@@ -127,20 +139,26 @@
   color: #fff!important;
 }
 
+.toggle-div-btn{
+  padding: 6px 10px;
+  border-radius: none!important;
+  cursor: pointer;
+}
+
 
 .card-close-btn i{
-  background-color: #181717!important;
+  /* background-color: #181717!important; */
   padding: 7px;
-  font-size: 13px;
+  /* font-size: 13px; */
   display: inline-block;
  cursor: pointer;
 }
 
 
-.cart-up{
+/* .cart-up{
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .footer-slide{
   background-color: #EFEFEF!important;
@@ -350,8 +368,9 @@
 
 
 .empty_basket_message{
-  background-color: white;
-  padding: 10px;
+  background-color: #212529;
+  color: #fff;
+  /* padding: 7px; */
   text-align: center;
   position: absolute;
   top: 50%;
@@ -772,12 +791,7 @@
 }
 
 @media (max-width: 407px){
-  .basket{
-      top: 43px;
-      left: 0;
-      width: 290px;
-     
-  }
+
 
   .image_list li {
      padding: 5px;
@@ -792,7 +806,7 @@
 
 
 .btn-close-item{
-  color: red!important;
+  color: #212529!important;
 }
 
 
@@ -1330,3 +1344,178 @@
 }
 
 
+
+
+/* YENI DEYISIKLIKLER */
+
+
+.slide-top{
+  height: 200px!important;
+  overflow: hidden!important;
+}
+
+
+
+.btn-outline{
+  outline: none!important;
+}
+
+.btn-radius{
+  border-radius: 0!important;
+}
+
+
+.cart-item-up{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item-img{
+  width: 130px;
+  height: 100px;
+}
+
+
+.cart-item-down{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.cart-item-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+.number-qty{
+  width: 50px;
+}
+
+
+.nav-container{
+  padding: 5px 0;
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+/* Pop up */
+
+.pop-up-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.435);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.pop-up .close{
+  display: flex;
+  justify-content: right;
+}
+
+.pop-up .close i{
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.pop-up {
+  padding: 1rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  z-index: 5;
+}
+
+.pop-up .pop-up-content {
+  padding: 2rem;
+}
+
+.pop-up .pop-up-content .pop-up-title {
+  font-size: 30px !important;
+  font-weight: bold;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.pop-up .pop-up-content .pop-up-text {
+  font-size: 20px !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.pop-up .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.pop-up .number .number-input,.number-btn{
+  text-align: center;
+  width: 80%;
+  margin: 0.2rem 0 !important;
+  padding: 0.5rem !important;
+  outline: none !important;
+}
+
+@media screen and (max-width: 550px) {
+  .pop-up {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pop-up {
+    width: 400px;
+  }
+
+  .pop-up-content {
+    padding: 2rem 9px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pop-up {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .pop-up {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .pop-up {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .pop-up {
+    width: 250px;
+  }
+}

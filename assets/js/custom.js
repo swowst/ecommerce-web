@@ -1,24 +1,30 @@
 
 function handleBasketToggle(basket, toggleButton) {
+ try{
   document.addEventListener("click", function (event) {
-      var isBasketVisible = basket.classList.contains("d-block");
-      var isClickInsideBasket = basket.contains(event.target) || toggleButton.contains(event.target);
+    var isBasketVisible = basket.classList.contains("d-block");
+    var isClickInsideBasket = basket.contains(event.target) || toggleButton.contains(event.target);
 
-      if (isBasketVisible && !isClickInsideBasket && !event.target.closest(".btn-close-item")) {
-          basket.classList.remove("d-block");
-          basket.classList.add("d-none");
-      }
-  });
+    if (isBasketVisible && !isClickInsideBasket && !event.target.closest(".btn-close-item")) {
+        basket.classList.remove("d-block");
+        basket.classList.add("d-none");
+    }
+});
+ }catch(e){
 
+ }
+
+try{
   toggleButton.addEventListener("click", function () {
-      if (basket.classList.contains("d-none")) {
-          basket.classList.remove("d-none");
-          basket.classList.add("d-block");
-      } else {
-          basket.classList.remove("d-block");
-          basket.classList.add("d-none");
-      }
-  });
+    if (basket.classList.contains("d-none")) {
+        basket.classList.remove("d-none");
+        basket.classList.add("d-block");
+    } else {
+        basket.classList.remove("d-block");
+        basket.classList.add("d-none");
+    }
+});
+}catch(e){}
 }
 
 var basketRespo = document.querySelector(".basket-respo");
@@ -29,6 +35,41 @@ var toggleButtonNormal = document.querySelector(".toggle-div");
 
 handleBasketToggle(basketRespo, toggleButtonRespo);
 handleBasketToggle(basketNormal, toggleButtonNormal);
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  const isPopupShown = localStorage.getItem('popupShown');
+
+  if (isPopupShown !== 'true') {
+      $('.pop-up-container').show();
+
+      $('.close-pop-up').on('click', function() {
+          $('.pop-up-container').hide();
+          localStorage.setItem('popupShown', 'true');
+      });
+  } else {
+      $('.pop-up-container').hide();
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,11 +97,14 @@ $(document).ready(function() {
 
 
 
-    $(document).ready(function() {
-      $('.btn-close-item').click(function() {
-        $(this).closest('.card-item').remove();
-      });
-    });
+$(document).ready(function () {
+  $('.card-close-btn').on('click', function (e) {
+      e.stopPropagation(); 
+      $(this).closest('.card-item').remove();
+
+      checkBasketEmpty()
+  });
+});
 
     
     
@@ -80,33 +124,38 @@ $(document).ready(function() {
 
 
 
+  function checkBasketEmpty() {
+    const $basket = $('.basket');
+    const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-dark btn-outline btn-radius">Səbətiniz boşdur!</p>');
+
+    if ($basket.find('.card-item').length === 0) {
+      $basket.append($emptyBasketMessage);
+    } else {
+      $emptyBasketMessage.remove();
+    }
+  }
+
+
 
 
   $(document).ready(function() {
-    const $basket = $('.basket-respo');
-    const $emptyBasketMessage = $('<p class="empty_basket_message">Səbətiniz boşdur!</p>');
-  
-    function checkBasketEmpty() {
-      if ($basket.find('.card-item').length === 0) {
-        $basket.append($emptyBasketMessage);
-      } else {
-        $emptyBasketMessage.remove();
-      }
-    }
   
     checkBasketEmpty(); 
+    checkBasketEmptyFor(); 
   
-    $('.btn-close-item').click(function() {
-      $(this).closest('.card-item').remove();
-      checkBasketEmpty();
-    });
-  
-    $('.checkout-button').click(function() {
-      checkBasketEmpty();
-    });
   });
   
 
+  function checkBasketEmptyFor() {
+    const $basket = $('.basket-respo');
+    const $emptyBasketMessage = $('<p class="empty_basket_message btn btn-dark">Səbətiniz boşdur!</p>');
+  
+    if ($basket.find('.cart-item-up').length === 0) {
+      $basket.append($emptyBasketMessage);
+    } else {
+      $emptyBasketMessage.remove();
+    }
+  }
 
 
 
@@ -124,29 +173,9 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function() {
-  const $basket = $('.basket');
-  const $emptyBasketMessage = $('<p class="empty_basket_message">Səbətiniz boşdur!</p>');
 
-  function checkBasketEmpty() {
-    if ($basket.find('.card-item').length === 0) {
-      $basket.append($emptyBasketMessage);
-    } else {
-      $emptyBasketMessage.remove();
-    }
-  }
 
-  checkBasketEmpty(); 
 
-  $('.btn-close-item').click(function() {
-    $(this).closest('.card-item').remove();
-    checkBasketEmpty();
-  });
-
-  $('.checkout-button').click(function() {
-    checkBasketEmpty();
-  });
-});
 
 
 
@@ -179,8 +208,6 @@ $(document).ready(function() {
      }
  });
 });
-
-
 
 
 $(document).ready(function () {
@@ -220,14 +247,6 @@ $(document).ready(function () {
       }
   });
 });
-
-
-
-
-
-
-
-
 
 
 
@@ -275,22 +294,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
   // Ürün 1 Sliderları
   $('.product-1 .slider-for').slick({
@@ -332,3 +335,50 @@ $(document).ready(function () {
 
   // Diğer ürün bölümlerinin sliderları da benzer şekilde tanımlanabilir
 });
+
+
+
+
+
+// YENI DEGISIKLIKLER
+
+
+
+$(document).ready(function () {
+  if ($('.card-item').length === 0) {
+      $('.empty-basket-message').show();
+  }
+
+  $('.card-close-btn').on('click', function () {
+      $(this).closest('.card-item').remove();
+
+      if ($('.card-item').length === 0) {
+          $('.empty-basket-message').show();
+      }
+  });
+});
+
+
+
+
+$(document).ready(function() {
+  $(".close-pop-up").click(function() {
+      $(".pop-up-container").hide();
+  });
+
+
+  $(".contact-text").click(function() {
+    $(".pop-up-container").show();
+});
+  
+});
+
+
+
+
+
+
+
+
+
+
