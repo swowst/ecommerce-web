@@ -49,16 +49,17 @@ function handleBasketToggle(basket, toggleButton) {
 
   if (isPopupShown !== 'true') {
       $('.pop-up-container').fadeIn();
+      $('body').css('overflow', 'hidden'); // Bu satırı ekledik
 
       $('.close-pop-up').on('click', function() {
           $('.pop-up-container').fadeOut();
           localStorage.setItem('popupShown', 'true');
+          $('body').css('overflow', 'visible'); // Bu satırı ekledik
       });
   } else {
       $('.pop-up-container').css('display', 'none');
   }
 });
-
 
 
  
