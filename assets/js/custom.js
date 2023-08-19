@@ -59,8 +59,13 @@ function handleBasketToggle(basket, toggleButton) {
   } else {
       $('.pop-up-container').css('display', 'none');
   }
-});
 
+  const isFirstVisit = localStorage.getItem('firstVisit'); 
+  if (!isFirstVisit) {
+      $('.pop-up-container').css('display', 'flex'); 
+      localStorage.setItem('firstVisit', 'true'); 
+  }
+});
 
  
  
@@ -366,19 +371,16 @@ function handleBasketToggle(basket, toggleButton) {
  
  
  $(document).ready(function() {
-   $(".close-pop-up").click(function() {
-       $(".pop-up-container").hide();
-   });
- 
- 
-   $(".contact-text").click(function() {
-     $(".pop-up-container").show();
- });
-   
- });
- 
- 
- 
+  $(".close-pop-up").click(function() {
+      $(".pop-up-container").hide();
+  });
+
+  $(".contact-text").click(function() {
+    $(".pop-up-container").css("display", "flex"); // Pop-up penceresine display:flex ekliyoruz
+    $(".pop-up-container").show();
+  });
+});
+
  
  
  
@@ -386,4 +388,36 @@ function handleBasketToggle(basket, toggleButton) {
  
  
  
+ 
+ 
+ $(document).ready(function () {
+
+  var galleryContainers = $('.gallery-container');
+
+  galleryContainers.each(function () {
+      var $this = $(this);
+
+      // Mevcut galeri konteynerı içindeki slaytı seç ve etkinleştir
+      $this.find('.js-items-slider-container .slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: $this.find('.js-items-slider-container .slider-nav')
+      });
+
+      $this.find('.js-items-slider-container .slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: $this.find('.js-items-slider-container .slider-for'),
+          dots: true,
+          centerMode: false,
+          focusOnSelect: true,
+          arrows: false,
+          accessibility: true,
+          // ... diğer ayarlarınız ...
+      });
+  });
+});
+
  
