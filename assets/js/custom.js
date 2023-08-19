@@ -45,20 +45,21 @@ function handleBasketToggle(basket, toggleButton) {
  
  
  $(document).ready(function() {
-   const isPopupShown = localStorage.getItem('popupShown');
- 
-   if (isPopupShown !== 'true') {
-       $('.pop-up-container').addClass('d-block');
- 
-       $('.close-pop-up').on('click', function() {
-           $('.pop-up-container').removeClass('d-block').addClass('d-none');
-           localStorage.setItem('popupShown', 'true');
-       });
-   } else {
-       $('.pop-up-container').addClass('d-none');
-   }
- });
- 
+  const isPopupShown = localStorage.getItem('popupShown');
+
+  if (isPopupShown !== 'true') {
+      $('.pop-up-container').fadeIn();
+
+      $('.close-pop-up').on('click', function() {
+          $('.pop-up-container').fadeOut();
+          localStorage.setItem('popupShown', 'true');
+      });
+  } else {
+      $('.pop-up-container').css('display', 'none');
+  }
+});
+
+
  
  
  
