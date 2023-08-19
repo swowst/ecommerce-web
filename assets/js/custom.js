@@ -69,6 +69,18 @@ function handleBasketToggle(basket, toggleButton) {
 
  
  
+
+$(document).ready(function() {
+  $(".close-pop-up").click(function() {
+      $(".pop-up-container").hide();
+      $('html, body').animate({ scrollTop: $(".featured-products").offset().top }, 1000);
+  });
+
+  $(".contact-text").click(function() {
+    $(".pop-up-container").show();
+  });
+});
+
  
  
  
@@ -376,7 +388,7 @@ function handleBasketToggle(basket, toggleButton) {
   });
 
   $(".contact-text").click(function() {
-    $(".pop-up-container").css("display", "flex"); // Pop-up penceresine display:flex ekliyoruz
+    $(".pop-up-container").css("display", "flex"); 
     $(".pop-up-container").show();
   });
 });
