@@ -1640,5 +1640,22 @@ height:79px;
 
 
 .number-qty{
+  text-align: center;
   height: 37px;
+  border: 0;
+  box-sizing: border-box;  
 }
+
+.quantity-form {
+  border: 1px solid black;
+  display: flex; 
+  align-items: center; 
+  margin: 2px; 
+  justify-content: space-around; 
+  padding: 0 !important;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+

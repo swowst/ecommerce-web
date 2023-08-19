@@ -139,7 +139,8 @@
                         <div class="cart-container">
                             <div class="cart-item-up">
                                 <div class="cart-item-title">
-                                    <h4>Product titlev Product titleProduct title Product title </h4>
+                                    <h4>Product titlev Product title
+                                        Product title Product title </h4>
                                 </div>
 
                                 <div class="card-close-btn">
@@ -160,10 +161,17 @@
                                 <div class="card-item-quantity">
                                     <label for="quantity" class="label-qty">Quantity</label>
                                     <div class="quantity qty-btn">
-                                        <button class="btn btn-dark decrease btn-outline btn-radius" id="decrease">-</button>
+                                        <!-- <button class="btn btn-dark decrease btn-outline btn-radius" id="decrease">-</button>
                                         <input class="number-qty" type="number" id="count" value="1" min="1"
                                             max="999">
-                                        <span class="btn btn-dark increase btn-outline btn-radius" id="increase">+</span>
+                                        <span class="btn btn-dark increase btn-outline btn-radius" id="increase">+</span> -->
+
+                                        <div class="quantity-form btn-dark qty-btn">
+                                            <span class="btn btn-dark decrease" style="outline: none !important;" id="decrease">-</span>
+                                            <input oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '1');" class="number-qty" type="text" id="count" value="1" min="1"
+                                            max="999">
+                                            <span class="btn btn-dark increase" id="increase">+</span>
+                                        </div>
                                     </div>
                                 </div>
 
