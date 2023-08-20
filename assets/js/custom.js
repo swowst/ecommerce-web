@@ -1,4 +1,3 @@
-
 function handleBasketToggle(basket, toggleButton) {
   try {
     document.addEventListener("click", function (event) {
@@ -98,20 +97,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
   $('.decrease').click(function () {
     const inputField = $(this).siblings('.number-qty');
@@ -143,19 +128,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
-//    $(document).ready(function () {
-//      function changeProductImage(event) {
-//          var newImageUrl = $(this).attr("src");
-//          var productDetailImage = $(this).closest(".row.mb-4").find(".card-img");
-//          productDetailImage.attr("src", newImageUrl);
-//      }
-
-//      $(".row.mb-4 .image_list li img").on("click", changeProductImage);
-//  });
 
 
 
@@ -192,26 +164,6 @@ function checkBasketEmptyFor() {
     $emptyBasketMessage.remove();
   }
 }
-
-
-
-//    $(document).ready(function() {
-//      $(".slider-nav2 img").on("click", function() {
-//          var newImageSrc = $(this).attr("src");
-
-//          $(this).closest(".product-section").find(".order-main-img img").attr("src", newImageSrc);
-//      });
-//  });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -252,160 +204,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  $(document).ready(function () {
-//    $('.js-items-slider-container2 .slider-for2').slick({
-//        slidesToShow: 1,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        fade: true,
-//        draggable: true, 
-//        asNavFor: '.js-items-slider-container2 .slider-nav2'
-//    });
-//    $('.js-items-slider-container2 .slider-nav2').slick({
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        asNavFor: '.js-items-slider-container2 .slider-for2',
-//        dots: true,
-//        focusOnSelect: true,
-//        arrows: false,
-//        accessibility: true,
-//        draggable: true, 
-
-//        vertical: true,
-//        customPaging: function(slider, i) {
-//            if (i < 4) {
-//                return '<button type="button" data-role="none">' + (i + 1) + '</button>';
-//            }
-//            return '';
-//        },
-//        onAfterChange: function (slide, index) {
-//            console.log("slider-nav change");
-//            console.log(this.$slides.get(index));
-//            $('.current-slide2').removeClass('current-slide2');
-//            $(this.$slides.get(index)).addClass('current-slide2');
-//        },
-//        onInit: function (slick) {
-//            $(slick.$slides.get(0)).addClass('current-slide2');
-//        }
-//    });
-//  });
-
-
-
-//  $(document).ready(function() {
-//    // İlk ürünün sliderı
-//    $('.product-1 .slider-for').slick({
-//        slidesToShow: 1,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        fade: true,
-//        asNavFor: '.product-1 .slider-nav'
-//        // Diğer özel ayarları buraya ekleyin
-//    });
-
-//    $('.product-1 .slider-nav').slick({
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        asNavFor: '.product-1 .slider-for',
-//        dots: true,
-//        centerMode: true,
-//        focusOnSelect: true
-//    });
-
-//    // İkinci ürünün sliderı
-//    $('.product-2 .slider-for').slick({
-//        slidesToShow: 1,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        fade: true,
-//        asNavFor: '.product-2 .slider-nav'
-//        // Diğer özel ayarları buraya ekleyinx
-//    });
-
-//    $('.product-2 .slider-nav').slick({
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        asNavFor: '.product-2 .slider-for',
-//        dots: true,
-//        centerMode: true,
-//        focusOnSelect: true
-//    });
-
-//    // Diğer ürün bölümlerinin sliderları da burada benzer şekilde tanımlanabilir
-//  });
-
-
-
-//  $(document).ready(function () {
-//    // Ürün 1 Sliderları
-//    $('.product-1 .slider-for').slick({
-//        slidesToShow: 1,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        fade: true,
-//        asNavFor: '.product-1 .slider-nav'
-//        // Diğer özel ayarları buraya ekleyin
-//    });
-
-//    $('.product-1 .slider-nav').slick({
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        asNavFor: '.product-1 .slider-for',
-//        dots: true,
-//        centerMode: true,
-//        focusOnSelect: true
-//    });
-
-//    // Ürün 2 Sliderları
-//    $('.product-2 .slider-for').slick({
-//        slidesToShow: 1,
-//        slidesToScroll: 1,
-//        arrows: false,
-//        fade: true,
-//        asNavFor: '.product-2 .slider-nav'
-//        // Diğer özel ayarları buraya ekleyin
-//    });
-
-//    $('.product-2 .slider-nav').slick({
-//        slidesToShow: 3,
-//        slidesToScroll: 1,
-//        asNavFor: '.product-2 .slider-for',
-//        dots: true,
-//        centerMode: true,
-//        focusOnSelect: true
-//    });
-
-//    // Diğer ürün bölümlerinin sliderları da benzer şekilde tanımlanabilir
-//  });
-
-
-
-
-
 // YENI DEGISIKLIKLER
 
 
@@ -423,26 +221,6 @@ $(document).ready(function () {
     }
   });
 });
-
-
-
-// here is
-// $(document).ready(function () {
-//   $(".close-pop-up").click(function () {
-//     $(".pop-up-container").hide();
-//   });
-
-//   $(".contact-text").click(function () {
-//     $(".pop-up-container").css("display", "flex");
-//     $(".pop-up-container").show();
-//   });
-// });
-
-
-
-
-
-
 
 
 

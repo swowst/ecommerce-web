@@ -67,6 +67,14 @@
         margin: 0 auto!important;
     }
 
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .nav-container-logo{
+        margin-bottom: 10px;
+    }
+
     
 }
 
@@ -178,6 +186,9 @@
         font-size: 13px!important;
     }
 }
+
+
+
 
 
 
@@ -904,5 +915,23 @@
     .card{
         padding: 0!important;
         margin: 0!important;
+    }
+}
+
+
+@media (max-width:400px){
+    .basket{
+        width: 300px!important;
+        left: -70px!important;
+    }
+}
+
+
+
+@media (max-width:330px){
+    .basket{
+        width: 260px!important;
+        left: -50px!important;
+
     }
 }
