@@ -816,6 +816,9 @@
       #slde{
         margin-top: -15rem!important;
     }
+    .slick-dots{
+        top: 10rem!important;
+    }
 }
 /* 
 @media (max-width:1172px) {
@@ -844,7 +847,7 @@
       .a-img{
         position: absolute!important;
         left: 0rem!important;
-        top: 0rem!important;
+        top: 1rem!important;
       }
       #slde{
         margin-top: 0rem!important;
@@ -860,6 +863,18 @@
         margin-top: -14rem;
         margin-left: 0rem;
       }
+      .slick-dots{
+        top: 4rem!important;
+    }
+    #order-w{
+        width: 60%!important;
+    }
+    .form-pro{
+        margin-top: 1.4rem!important;
+    }
+    .card-body p{
+        font-size: 15px!important;
+    }
 }
 
 @media (max-width:767px) {
@@ -870,7 +885,7 @@
         height: 713px;
     }
     .pro-up{
-        height: 44rem!important;
+        height: 44.5rem!important;
       }
       .form-pro{
         margin-left: 3rem;
@@ -878,6 +893,38 @@
       .card{
         margin-top: 1rem;
       }
+
+      .slick-dots{
+        top: 6rem!important;
+    }
+    #slde{
+        margin-bottom: 26px;
+    }
+    .order-main-img{
+        padding-top: 0rem!important;
+    }
+    .items-slider-container .slider-for img{
+        max-width: 70%!important;
+        left: 5rem!important;
+    }
+    .ro-he{
+        margin-top: -2rem;
+    }
+    #slde{
+        margin-top: -2rem!important;
+    }
+
+    #order-w{
+        width: 100%!important;
+    }
+
+    .card-body{
+        padding: 0!important;
+    }
+    .desc-head{
+        margin-top: 1rem!important;
+    }
+   
 }
 @media (max-width:480px) {
     .pro-up{
@@ -885,6 +932,12 @@
       }
       .form-pro{
         margin-left: 1.5rem;
+      }
+      .items-slider-container .slider-for img{
+        left: 3rem!important;
+      }
+      #slde{
+        margin-top: -4rem!important;
       }
 }
 
@@ -902,5 +955,12 @@
     .slick-initialized{
         height: 12rem;
     }
+    .slick-dots{
+        top: 3rem!important;
+    }
 }
-
+@media (min-width:300px) {
+    .pro-up{
+        height: auto!important;
+      }
+}

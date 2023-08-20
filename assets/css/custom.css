@@ -1650,7 +1650,7 @@ textarea:focus, input:focus{
 
 .pro-up{
   overflow: hidden;
-  height: 32rem;
+  height: auto;
 }
 
 
@@ -1676,4 +1676,23 @@ textarea:focus, input:focus{
 #slde{
   margin-top: -14rem;
   margin-left: 0.5rem;
+}
+.draggable{
+  margin-top: 37px;
+}
+.slick-dots{
+  top: 11rem;
+}
+
+.desc-head{
+  margin-top: 2rem;
+}
+
+
+.form-pro{
+  margin-top: 3rem;
+}
+
+#order-w{
+  width: 50%;
 }
