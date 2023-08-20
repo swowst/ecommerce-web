@@ -271,20 +271,6 @@ $(document).ready(function () {
           // ... diğer ayarlarınız ...
       });
 
-
-      $this.find('.js-items-slider-container2 .slider-nav2').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: $this.find('.js-items-slider-container .slider-for'),
-        dots: true,
-        centerMode: false,
-        focusOnSelect: true,
-        arrows: false,
-        accessibility: true,
-        vertical: true,
-        // ... diğer ayarlarınız ...
-    });
-
   });
 });
 

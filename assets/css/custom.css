@@ -1651,14 +1651,12 @@ textarea:focus, input:focus{
 .pro-up{
   overflow: hidden;
 }
-.slde-2{
-  display: none;
-}
+
 
 .pro-up{
   overflow: hidden;
 }
 
 .slick-list{
-  height: 390px!important;
+  height: 365px!important;
 }

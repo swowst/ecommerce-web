@@ -798,6 +798,21 @@
 
 /* en son slider */
 
+@media (max-width:1332px) {
+    .slick-list{
+        height: 309px!important;
+    }
+    .sl-he{
+        height: 15rem;
+    }
+}
+
+@media (max-width:1172px) {
+    #slde{
+        margin-top: -8rem;
+    }
+}
+
 @media (max-width:991px) {
     .slde-2{
         display: block!important;
@@ -815,6 +830,11 @@
       .ro-he{
         height: 25rem;
       }
+      @media (max-width:1172px) {
+        #slde{
+            margin-top: 0rem;
+        }
+    }
 }
 
 @media (max-width:767px) {
@@ -838,3 +858,4 @@
         height: 12rem;
     }
 }
+
