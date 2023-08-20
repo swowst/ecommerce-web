@@ -1682,7 +1682,13 @@ textarea:focus, input:focus{
 }
 .slick-dots{
   top: 11rem;
+  display: block;
+    margin: 0;
+    height: 50px;
 }
+
+
+
 
 .desc-head{
   margin-top: 2rem;
@@ -1695,4 +1701,15 @@ textarea:focus, input:focus{
 
 #order-w{
   width: 50%;
+}
+
+
+
+.main-product-item{
+  height: 500px;
+}
+
+
+.sl-he{
+  height: 100px;
 }

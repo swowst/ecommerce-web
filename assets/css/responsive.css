@@ -66,6 +66,11 @@
         display: flex!important;
         margin: 0 auto!important;
     }
+
+    
+.main-product-item{
+    height: 420px!important;
+  }
 }
 
 @media (max-width:767px) {
@@ -147,6 +152,8 @@
         width: 370px!important;
         left: 50px!important;
     }
+
+
 }
 
 
@@ -951,6 +958,12 @@
       }
 }
 
+
+
+
+
+
+
 @media (max-width:360px) {
     .slick-initialized{
         height: 12rem;
@@ -963,4 +976,15 @@
     .pro-up{
         height: auto!important;
       }
+}
+
+
+
+
+@media (max-width:370px) {
+    
+    .card{
+        padding: 0!important;
+        margin: 0!important;
+    }
 }
