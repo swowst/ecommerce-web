@@ -1650,6 +1650,7 @@ textarea:focus, input:focus{
 
 .pro-up{
   overflow: hidden;
+  height: 32rem;
 }
 
 
@@ -1659,4 +1660,20 @@ textarea:focus, input:focus{
 
 .slick-list{
   height: 365px!important;
+}
+
+.items-slider-container .slider-for img{
+  max-width: 60%;
+}
+
+
+.a-img{
+  position: absolute;
+  left: 8rem;
+  top: -2rem;
+}
+
+#slde{
+  margin-top: -14rem;
+  margin-left: 0.5rem;
 }
