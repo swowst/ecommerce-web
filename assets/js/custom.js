@@ -201,166 +201,7 @@ $(document).ready(function() {
  
  
  
-  $(document).ready( function () {
- 
-  $('.js-items-slider-container .slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.js-items-slider-container .slider-nav'
-  });
-  $('.js-items-slider-container .slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.js-items-slider-container .slider-for',
-      dots: true,
-      focusOnSelect: true,
-      arrows: false,
-      accessibility: true,
-      onAfterChange: function (slide, index) {
-        console.log("slider-nav change");
-        console.log(this.$slides.get(index));
-        $('.current-slide').removeClass('current-slide');
-        $(this.$slides.get(index)).addClass('current-slide');
-      },
-      onInit: function (slick) {
-        $(slick.$slides.get(0)).addClass('current-slide');
-      }
-  });
- });
- 
- 
- $(document).ready(function () {
-   $('.js-items-slider-container2 .slider-for2').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       fade: true,
-       draggable: true, 
-       asNavFor: '.js-items-slider-container2 .slider-nav2'
-   });
-   $('.js-items-slider-container2 .slider-nav2').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       asNavFor: '.js-items-slider-container2 .slider-for2',
-       dots: true,
-       focusOnSelect: true,
-       arrows: false,
-       accessibility: true,
-       draggable: true, 
- 
-       vertical: true,
-       customPaging: function(slider, i) {
-           if (i < 4) {
-               return '<button type="button" data-role="none">' + (i + 1) + '</button>';
-           }
-           return '';
-       },
-       onAfterChange: function (slide, index) {
-           console.log("slider-nav change");
-           console.log(this.$slides.get(index));
-           $('.current-slide2').removeClass('current-slide2');
-           $(this.$slides.get(index)).addClass('current-slide2');
-       },
-       onInit: function (slick) {
-           $(slick.$slides.get(0)).addClass('current-slide2');
-       }
-   });
- });
- 
- 
- 
- $(document).ready(function() {
-   // İlk ürünün sliderı
-   $('.product-1 .slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       fade: true,
-       asNavFor: '.product-1 .slider-nav'
-       // Diğer özel ayarları buraya ekleyin
-   });
- 
-   $('.product-1 .slider-nav').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       asNavFor: '.product-1 .slider-for',
-       dots: true,
-       centerMode: true,
-       focusOnSelect: true
-   });
- 
-   // İkinci ürünün sliderı
-   $('.product-2 .slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       fade: true,
-       asNavFor: '.product-2 .slider-nav'
-       // Diğer özel ayarları buraya ekleyinx
-   });
- 
-   $('.product-2 .slider-nav').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       asNavFor: '.product-2 .slider-for',
-       dots: true,
-       centerMode: true,
-       focusOnSelect: true
-   });
- 
-   // Diğer ürün bölümlerinin sliderları da burada benzer şekilde tanımlanabilir
- });
- 
- 
- 
- $(document).ready(function () {
-   // Ürün 1 Sliderları
-   $('.product-1 .slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       fade: true,
-       asNavFor: '.product-1 .slider-nav'
-       // Diğer özel ayarları buraya ekleyin
-   });
- 
-   $('.product-1 .slider-nav').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       asNavFor: '.product-1 .slider-for',
-       dots: true,
-       centerMode: true,
-       focusOnSelect: true
-   });
- 
-   // Ürün 2 Sliderları
-   $('.product-2 .slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       fade: true,
-       asNavFor: '.product-2 .slider-nav'
-       // Diğer özel ayarları buraya ekleyin
-   });
- 
-   $('.product-2 .slider-nav').slick({
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       asNavFor: '.product-2 .slider-for',
-       dots: true,
-       centerMode: true,
-       focusOnSelect: true
-   });
- 
-   // Diğer ürün bölümlerinin sliderları da benzer şekilde tanımlanabilir
- });
- 
- 
- 
- 
- 
+
  // YENI DEGISIKLIKLER
  
  
@@ -402,7 +243,7 @@ $(document).ready(function() {
  
  
  
- $(document).ready(function () {
+$(document).ready(function () {
 
   var galleryContainers = $('.gallery-container');
 
@@ -419,7 +260,7 @@ $(document).ready(function() {
       });
 
       $this.find('.js-items-slider-container .slider-nav').slick({
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           asNavFor: $this.find('.js-items-slider-container .slider-for'),
           dots: true,
@@ -429,7 +270,25 @@ $(document).ready(function() {
           accessibility: true,
           // ... diğer ayarlarınız ...
       });
+
+
+      $this.find('.js-items-slider-container2 .slider-nav2').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: $this.find('.js-items-slider-container .slider-for'),
+        dots: true,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        accessibility: true,
+        vertical: true,
+        // ... diğer ayarlarınız ...
+    });
+
   });
 });
 
+ 
+ 
+ 
  

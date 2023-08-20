@@ -793,3 +793,48 @@
         height: 67px;
     }
 }
+
+
+
+/* en son slider */
+
+@media (max-width:991px) {
+    .slde-2{
+        display: block!important;
+        height: 5rem;
+      }
+      .slick-initialized{
+        height: 12rem;
+      }
+      .slider-nav {
+        height: 4rem;
+      }
+      .order-main-img{
+        padding-top: 1rem!important;
+      }
+      .ro-he{
+        height: 25rem;
+      }
+}
+
+@media (max-width:767px) {
+    .slick-initialized{
+        height: 19rem;
+    }
+    .product-section{
+        height: 713px;
+    }
+}
+
+
+@media (max-width:440px) {
+    .slick-initialized{
+        height: 15rem;
+    }
+}
+
+@media (max-width:360px) {
+    .slick-initialized{
+        height: 12rem;
+    }
+}
