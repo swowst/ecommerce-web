@@ -57,7 +57,10 @@ $(document).ready(function () {
     $('.pop-up-container').fadeIn();
     $('body').css('overflow', 'hidden');
 
+
     $('.close-pop-up').on('click', function () {
+      $('html, body').animate({ scrollTop: $(".featured-products").offset().top }, 1000);
+
       $('.pop-up-container').fadeOut();
       localStorage.setItem('popupShown', 'true');
       $('body').css('overflow', 'visible');
@@ -75,17 +78,23 @@ $(document).ready(function () {
 
 
 
+// DEGISIKLIK BURADA
+
 
 $(document).ready(function () {
   $(".close-pop-up").click(function () {
     $(".pop-up-container").hide();
-    $('html, body').animate({ scrollTop: $(".featured-products").offset().top }, 1000);
   });
 
   $(".contact-text").click(function () {
+    $(".pop-up-container").css("display", "flex");
     $(".pop-up-container").show();
   });
+
+ 
+  
 });
+
 
 
 
@@ -417,17 +426,17 @@ $(document).ready(function () {
 
 
 
+// here is
+// $(document).ready(function () {
+//   $(".close-pop-up").click(function () {
+//     $(".pop-up-container").hide();
+//   });
 
-$(document).ready(function () {
-  $(".close-pop-up").click(function () {
-    $(".pop-up-container").hide();
-  });
-
-  $(".contact-text").click(function () {
-    $(".pop-up-container").css("display", "flex");
-    $(".pop-up-container").show();
-  });
-});
+//   $(".contact-text").click(function () {
+//     $(".pop-up-container").css("display", "flex");
+//     $(".pop-up-container").show();
+//   });
+// });
 
 
 

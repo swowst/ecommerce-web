@@ -1039,7 +1039,7 @@
 }
 
 
-.online-popup-container {
+.popup-container-for {
   position: fixed;
   top: 0;
   left: 0;
@@ -1050,7 +1050,6 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  display: none;
 }
 
 .pop-up .close {
@@ -1058,7 +1057,17 @@
   justify-content: right;
 }
 
+.pop-up-for .close-for {
+  display: flex;
+  justify-content: right;
+}
+
 .pop-up .close i {
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.pop-up-for .close-for i {
   cursor: pointer;
   margin: 0 !important;
 }
@@ -1072,6 +1081,7 @@
   width: 500px;
   z-index: 5;
 }
+
 
 .pop-up .pop-up-content {
   padding: 2rem;
