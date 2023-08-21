@@ -56,10 +56,12 @@ $(document).ready(function () {
   if (isPopupShown !== 'true') {
     $('.pop-up-container').fadeIn();
     $('body').css('overflow', 'hidden');
+    $('.pop-up-container').css('display', 'flex');
+
 
 
     $('.close-pop-up').on('click', function () {
-      $('html, body').animate({ scrollTop: $(".featured-products").offset().top }, 0);
+      $('html, body').animate({ scrollTop: $(".featured-products").offset().top },0);
 
       $('.pop-up-container').fadeOut();
       localStorage.setItem('popupShown', 'true');
@@ -71,7 +73,7 @@ $(document).ready(function () {
 
   const isFirstVisit = localStorage.getItem('firstVisit');
   if (!isFirstVisit) {
-    $('.pop-up-container').css('display', 'flex');
+    // $('.pop-up-container').css('display', 'flex');
     localStorage.setItem('firstVisit', 'true');
   }
 });
