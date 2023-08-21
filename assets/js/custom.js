@@ -59,7 +59,7 @@ $(document).ready(function () {
 
 
     $('.close-pop-up').on('click', function () {
-      $('html, body').animate({ scrollTop: $(".featured-products").offset().top });
+      $('html, body').animate({ scrollTop: $(".featured-products").offset().top }, 0);
 
       $('.pop-up-container').fadeOut();
       localStorage.setItem('popupShown', 'true');
