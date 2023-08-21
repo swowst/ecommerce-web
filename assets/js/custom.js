@@ -86,11 +86,17 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".close-pop-up").click(function () {
     $(".pop-up-container").hide();
+    $('body').css('overflow', 'visible');
+
+
   });
 
   $(".contact-text").click(function () {
     $(".pop-up-container").css("display", "flex");
     $(".pop-up-container").show();
+    $('body').css('overflow', 'hidden');
+
+
   });
 
  
