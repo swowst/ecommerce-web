@@ -939,3 +939,67 @@
 
     }
 }
+
+
+
+/* 
+Footer */
+
+@media (max-width:1200px){
+    .footer-down{
+        padding: 0!important;
+        padding-top: 40px!important;
+    }
+   
+}
+
+@media (max-width:992px){
+
+    .footer-down{
+       flex-wrap: wrap;
+    }
+
+    .footer-main-info{
+       width: 300px;
+       margin-top: 40px;
+    }
+   
+}
+
+@media (max-width:874px){
+
+    .footer-socials{
+       width: 320px;
+    }
+
+    .footer-main-info{
+        width: 250px;
+     }
+   
+}
+
+
+@media (max-width:575px){
+
+    .footer-down{
+      padding-left: 40px!important;
+    }
+   
+}
+
+@media (max-width:525px){
+
+    .footer-socials{
+        width: 350px;
+        margin-top: 10px;
+     }
+
+     .footer-up{
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center;
+     }
+   
+}
+
+
