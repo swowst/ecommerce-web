@@ -961,7 +961,7 @@ Footer */
 
     .footer-main-info{
        width: 300px;
-       margin-top: 40px;
+       /* margin-top: 40px; */
     }
    
 }
@@ -970,6 +970,7 @@ Footer */
 
     .footer-socials{
        width: 320px;
+       margin-bottom: 40px;
     }
 
     .footer-main-info{

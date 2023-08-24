@@ -1443,7 +1443,6 @@ Footer */
 .footer-down{
   display: flex;
   justify-content: space-between;
-  /* background-color: #888; */
   padding: 40px;
 }
 
@@ -1488,20 +1487,21 @@ Footer */
 }
 
 
-.footer-logo{
-  color: #56ae6c;
-
+.footer-section{
+  background-color: #e5e5e5;
 }
 
 .footer-up-section-background{
-  background-color: #000;
+  background-color: #4f4f4f;
   color: #fff;
 }
 
 
 .footer-up{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer-up-icon{
