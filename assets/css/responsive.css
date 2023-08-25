@@ -1003,4 +1003,25 @@ Footer */
    
 }
 
+@media screen and (max-width: 993px) {
+    .footer-main-info-container {
+        text-align: center;
+        padding: 1rem 0;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
 
+
+    .footer-main-info {
+        padding: 1rem 0;
+        min-width: 200px;
+    }
+
+    .footer-socials {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+}

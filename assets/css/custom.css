@@ -1441,6 +1441,7 @@ Footer */
 
 
 .footer-down{
+  width: 100% !important;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -1456,7 +1457,7 @@ Footer */
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #4f4f4f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1466,7 +1467,7 @@ Footer */
 
 
 .socials-main-div > div:hover{
-  background-color: #000;
+  background-color: #56ae6c;
   color: #fff;
 }
 
@@ -1521,3 +1522,23 @@ Footer */
   font-size: 20px;
 }
 
+.footer-socials {
+  width: 35%;
+}
+
+.socials-main-div {
+  padding: 1rem 0;
+}
+
+.footer-info-header h3, .socials-main-text h3 {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #56ae6c;
+}
+
+.footer-main-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
